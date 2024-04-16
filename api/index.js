@@ -19,7 +19,7 @@ const client_secret = process.env.CLIENT_SECRET;
 router.get("/twitch", async (req, res) => {
   try {
     const response = await axios.post(
-      `https://id.twitch.tv/oauth2/token?client_id=${client_id}&client_secret=${process.env.CLIENT_SECRET}&grant_type=client_credentials`
+      `https://id.twitch.tv/oauth2/token?client_id=otpjthd6a9addxg5qqv04x24yzo861&client_secret=yjmcacd1c2r4w0dxwsglvfxujo5fuy&grant_type=client_credentials`
     );
     const token = response.data.access_token;
     const options = {
